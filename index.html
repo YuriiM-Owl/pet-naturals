@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--!--------------------- Header ----------------------->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="logo-box">
           <a class="logo" href=""><img src="./images/logo-x1.webp" alt="" /></a>
@@ -43,8 +43,48 @@
             <use href="./images/sprite.svg#cloud-big-svg"></use>
           </svg>
         </nav>
+        <button
+          class="burger js-open-menu js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="burger-wrapper">
+            <span class="burger-line first-line"></span>
+            <span class="burger-line second-line"></span>
+            <span class="burger-line third-line"></span>
+            <span class="burger-line fourth-line"></span>
+          </span>
+        </button>
+
+        <!----------Burger  ---------->
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+          <nav class="nav-mob-menu">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="#order-form" class="mob-nav-link text anchor-link"
+                  >ORDER</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  href="#manufacturer-section"
+                  class="mob-nav-link text anchor-link"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  href="#best-uses-section"
+                  class="mob-nav-link text anchor-link"
+                  >RESULTS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header> -->
+    </header>
     <!--!--------------------- Header End ----------------------->
 
     <!--!--------------------- Hero ----------------------->
@@ -308,6 +348,7 @@
     </script>
 
     <script type="module" src="./js/smooth-scroll.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
 
     <!-- phone mask -->
     <script

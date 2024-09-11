@@ -42,6 +42,10 @@ body {
   font-weight: 400;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
