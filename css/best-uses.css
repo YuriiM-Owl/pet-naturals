@@ -42,9 +42,6 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 375px) {
-}
-
 @media screen and (min-width: 768px) {
   .best-uses-wrapper {
     flex-direction: row;
