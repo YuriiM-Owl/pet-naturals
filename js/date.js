@@ -2,11 +2,10 @@ const orderDate = document.querySelector('#form-order-date');
 
 const today = new Date();
 
-const formattedDate =
-  today.getDate().toString().padStart(2, '0') +
-  '.' +
-  (today.getMonth() + 1).toString().padStart(2, '0') +
-  '.' +
-  today.getFullYear();
+const day = today.getDate().toString().padStart(2, '0');
 
-orderDate.textContent = `${formattedDate}`;
+const month = (today.getMonth() + 1).toString().padStart(2, '0');
+
+const year = today.getFullYear();
+
+orderDate.innerHTML = `${day}.${month}.${year}`;
