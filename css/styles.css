@@ -26,7 +26,7 @@ body {
 
 /* h2 */
 .section-title {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 700;
 }
 
@@ -55,6 +55,10 @@ body {
 
   .container {
     max-width: 768px;
+  }
+
+  .section-title {
+    font-size: 52px;
   }
 
   .text {
