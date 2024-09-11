@@ -1,0 +1,9 @@
+:root {
+  /** -------------------- FONTS -------------------- */
+
+  --ff-global-font: 'Roboto', sans-serif;
+
+  /** -------------------- OTHER -------------------- */
+
+  --trn-main-transition-params: 340ms cubic-bezier(0.39, 0.46, 0.02, 0.86);
+}
