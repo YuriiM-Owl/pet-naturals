@@ -319,44 +319,21 @@
 
     <!--!--------------------- Best Uses End----------------------->
 
-    <script>
-      function discountCountdown(duration) {
-        const display = document.querySelector('.discount-timer');
-        let timer = duration;
+    <!-- phone mask cdn -->
 
-        function updateTimer() {
-          const hours = String(Math.floor(timer / 3600)).padStart(2, '0');
-          const minutes = String(Math.floor((timer % 3600) / 60)).padStart(
-            2,
-            '0'
-          );
-          const seconds = String(timer % 60).padStart(2, '0');
-
-          display.textContent = `${hours}:${minutes}:${seconds}`;
-
-          if (--timer < 0) {
-            clearInterval(interval);
-          }
-        }
-
-        updateTimer(); // Display the initial time
-        const interval = setInterval(updateTimer, 1000);
-      }
-
-      // Set the countdown duration in seconds (2 hours = 7200 seconds)
-      discountCountdown(7200);
-    </script>
-
-    <script type="module" src="./js/smooth-scroll.js"></script>
-    <script type="module" src="./js/mobile-menu.js"></script>
-
-    <!-- phone mask -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/inputmask.min.js"
       integrity="sha512-eD+19OyeG3GbJ6QGk9uI7TfTozYXAVPz6/Va/YVVuBz7ZFvAeiFzol0whJplf9l6cNQcA8sVxVXvCFW489cAVA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- scripts -->
+
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/smooth-scroll.js"></script>
     <script type="module" src="./js/mask.js"></script>
+    <script type="module" src="./js/timer.js"></script>
+    <script type="module" src="./js/date.js"></script>
   </body>
 </html>

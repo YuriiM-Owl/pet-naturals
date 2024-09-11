@@ -1,13 +1,10 @@
 .header {
   position: fixed;
-  /* position: relative; */
   width: 100%;
   z-index: 100;
-  /* top: 136px; */
 }
 
 .header .container {
-  /* height: 136px; */
   padding: 0 7px;
   display: flex;
   flex-direction: column;
@@ -27,7 +24,6 @@
 }
 
 .logo-img-bg {
-  /* display: none; */
   position: absolute;
   top: 50%;
   left: -26px;
@@ -45,7 +41,7 @@
 .burger {
   width: 32px;
   height: 32px;
-  border: 2px solid #7fb3ff;
+  border: 2px solid rgba(127, 178, 255, 0.3);
   border-radius: 8px;
   background-color: rgba(233, 228, 199, 0.6);
   cursor: pointer;
@@ -145,24 +141,25 @@
 .mob-nav-link {
   font-size: 20px;
   color: #715d00;
-  transition: text-decoration var(--trn-main-transition-params);
+  text-decoration-line: underline;
+  transition: color var(--trn-main-transition-params);
 }
 
-.mob-nav-link:hover,
-.mob-nav-link:focus {
-  text-decoration: underline;
+.mob-nav-link:is(:focus, :hover) {
+  color: #483c08;
 }
 
 @media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
-  /* .header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-  } */
+  .header .container {
+    height: 136px;
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .burger {
     display: none;
@@ -215,14 +212,6 @@
 
   .nav-link:is(:focus, :hover) {
     color: #483c08;
-  }
-
-  .header .container {
-    height: 136px;
-    padding: 0 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
