@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 10px;
 }
 
 .header .container {
@@ -10,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 12px;
+  row-gap: 16px;
 }
 
 .logo-box {
